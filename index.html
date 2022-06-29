@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mark sheet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #page {
+            width: 210mm;
+            height: 275mm;
+            padding: 15px;
+            position: relative;
+        }
+        #footer{
+            /* position: absolute; */
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem; 
+            display: flex;
+            justify-content: space-between;
+            bottom: 0;
+            left: 0;
+        }
+        #footer p{
+            
+            display: inline-block;
+            border-top: 1px solid black;
+            padding-top: 5px;
+            font-size: 13px;
+            font-weight: bold;
+
+        }
+
+        .school_title {
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .school_title span {
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+
+        #page_header {
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page_header p {
+            font-size: 18px;
+        }
+        .school_title p{
+            font-size: 12px;
+        }
+        table{
+            font-size: 13px;
+            border-collapse: collapse;
+        }
+         table th{
+            padding:4px;
+        }
+         table td{
+            padding:4px;
+        }
+
+        .footer_one{
+            display: flex;
+        }
+        
+       
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <h3 class="school_title">abc high school </br> <span>Alamnagar, Rangpur</span></h3>
+        <div id="page_header">
+            <div class="student_image">
+                <img src="https://media.istockphoto.com/photos/portrait-of-handsome-smiling-young-man-with-crossed-arms-picture-id1200677760?k=20&m=1200677760&s=612x612&w=0&h=JCqytPoHb6bQqU9bq6gsWT2EX1G5chlW5aNK81Kh4Lg="
+                    style="height: 120px; width:120px; object-fit:cover" alt="">
+            </div>
+            <div class="school_title">
+                    <img src="https://png.pngtree.com/png-vector/20211011/ourmid/pngtree-school-logo-png-image_3977360.png"  style="height: 70px; width:70px; object-fit:cover" alt="">
+                    <p>academic transcription</p>
+            </div>
+            <div class="mark_table">
+                <table border="1">
+                    <thead>
+                        <th>Grade</th>
+                        <th>Marks(%)</th>
+                        <th>Gpa</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A+</td>
+                            <td>80-100</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>70-79</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>A-</td>
+                            <td>60-69</td>
+                            <td>3.50</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>50-59</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>40-49</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>0-39</td>
+                            <td>0</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="student_information">
+            <table style="width: 100%; margin:5px 0px" border="1">
+                    <tr>
+                        <td>Student Name</td>
+                        <td colspan="3">Md. Rakibul Islam</td>
+                        <td>Class</td>
+                        <td>Eight Morning</td>
+                    </tr>
+                    <tr>
+                        <td>Student Id</td>
+                        <td>10546874645</td>
+                        <td>Examinition</td>
+                        <td>Half yearly 2022</td>
+                        <td>Roll Number</td>
+                        <td>01</td>
+                    </tr>
+            </table>
+        </div>
+
+
+        <div class="result_sheet">
+            <table style="width: 100%; margin:8px 0px;" border="1">
+                    <thead>
+                            <th style="width:25%">Name</th>
+                            <th>Full Marks</th>
+                            <th>CRE</th>
+                            <th>MCQ</th>
+                            <th>PRAC</th>
+                            <th>SUB TOTAL</th>
+                            <th>CONVT NUMBER</th>
+                            <th>CA</th>
+                            <th>Total</th>
+                            <th>LG</th>
+                            <th>GP</th>
+                            <th>HIGHEST</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bangla</td>
+                            <td>100</td>
+                            <td>32</td>
+                            <td>12</td>
+                            <td>08</td>
+                            <td>79</td>
+                            <td></td>
+                            <td>5</td>
+                            <td>83</td>
+                            <td>A</td>
+                            <td>4.00</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Bangla</td>
+                            <td>100</td>
+                            <td>32</td>
+                            <td>12</td>
+                            <td>08</td>
+                            <td>79</td>
+                            <td></td>
+                            <td>5</td>
+                            <td>83</td>
+                            <td>A</td>
+                            <td>4.00</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Bangla</td>
+                            <td>100</td>
+                            <td>32</td>
+                            <td>12</td>
+                            <td>08</td>
+                            <td>79</td>
+                            <td></td>
+                            <td>5</td>
+                            <td>83</td>
+                            <td>A</td>
+                            <td>4.00</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Bangla</td>
+                            <td>100</td>
+                            <td>32</td>
+                            <td>12</td>
+                            <td>08</td>
+                            <td>79</td>
+                            <td></td>
+                            <td>5</td>
+                            <td>83</td>
+                            <td>A</td>
+                            <td>4.00</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Bangla</td>
+                            <td>100</td>
+                            <td>32</td>
+                            <td>12</td>
+                            <td>08</td>
+                            <td>79</td>
+                            <td></td>
+                            <td>5</td>
+                            <td>83</td>
+                            <td>A</td>
+                            <td>4.00</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Bangla</td>
+                            <td>100</td>
+                            <td>32</td>
+                            <td>12</td>
+                            <td>08</td>
+                            <td>79</td>
+                            <td></td>
+                            <td>5</td>
+                            <td>83</td>
+                            <td>A</td>
+                            <td>4.00</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Bangla</td>
+                            <td>100</td>
+                            <td>32</td>
+                            <td>12</td>
+                            <td>08</td>
+                            <td>79</td>
+                            <td></td>
+                            <td>5</td>
+                            <td>83</td>
+                            <td>A</td>
+                            <td>4.00</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Bangla</td>
+                            <td>100</td>
+                            <td>32</td>
+                            <td>12</td>
+                            <td>08</td>
+                            <td>79</td>
+                            <td></td>
+                            <td>5</td>
+                            <td>83</td>
+                            <td>A</td>
+                            <td>4.00</td>
+                            <td>88</td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <!-- start here  -->
+                                <td colspan="4" style="text-align:right">Total Marks</td>
+                                <td>872</td>
+                                <td colspan="2">Total GP</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <!-- start here  -->
+                                <td colspan="4" style="text-align:right">GPA</td>
+                                <td>5.00</td>
+                                <td colspan="3">Working days : 102</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <!-- start here  -->
+                                <td colspan="4" style="text-align:right">Position in section</td>
+                                <td>3rd</td>
+                                <td colspan="3">PRESENCE: 48</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <!-- start here  -->
+                                <td colspan="4" style="text-align:right">Position in shift</td>
+                                <td>8th</td>
+                                <td colspan="3"></td>
+                            </tr>
+                            
+                    </tfoot>
+            </table>
+        </div>
+
+
+        <div class="footer_one">
+            <div class="footer_one_part" style="width: 48%;">
+                <table style="width: 100%;" border="1">
+                        <thead>
+                            <th colspan="4">Student Behaviour</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>Execelnt</td>
+                                <td></td>
+                                <td>Very Good</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Improvment Needed</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+            <div class="footer_one_part" style="width: 48%; margin-left:30px;">
+                <table style="width: 100%;" border="1" >
+                        <thead>
+                            <th colspan="4">Co-curricular Activities</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>Cultural Activity</td>
+                                <td></td>
+                                <td>Debate</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Red Crescent</td>
+                                <td></td>
+                                <td>BNCC</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="3">Others</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="remarks">
+            <table style="width:100%; margin:4px 0px;" border="1">
+                    <thead>
+                        <th colspan="8" style="text-align: center;">REMARKS</th>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td></td>
+                                <td>Excellent</td>
+                                <td></td>
+                                <td>Very good</td>
+                                <td></td>
+                                <td>good</td>
+                                <td></td>
+                                <td>Fair</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>Poor</td>
+                                <td></td>
+                                <td>Very poor</td>
+                                <td></td>
+                                <td>Fail</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                    </tbody>
+            </table>
+        </div>
+
+        <footer id="footer">
+            <p>GUARDIAN'S SIGNATURE</p>
+            <p>CLASS TEACHER SIGNATURE</p>
+            <p>HEAD TEACHER SIGNATURE</p>
+        </footer>
+    </div>
+</body>
+
+</html>
